@@ -1,0 +1,28 @@
+.BeansDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.BeansPageStyle{
+    display: inline-block;
+    /* flex-grow: 1; */
+    justify-content: center;
+    margin-right: 20px;
+    text-decoration: none;
+    list-style: none;
+    overflow: auto;
+    text-align: center;
+    /* border-top: solid grey 0.3px; */
+    border-bottom: solid grey 0.3px;
+}
+
+.BeansMap {
+    flex-grow: 1;
+    margin-left: 20px;
+    justify-content: right;
+    border-radius: 1em;
+    overflow: auto;
+    width: 75%;
+
+
+}

@@ -1,0 +1,14 @@
+.carousel-item, .carousel-item.active {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+}
+
+.Carousel{
+    width: 70%;
+    height: 40%;
+}
+
+.BeansPageLayout{
+    text-decoration: none;
+}

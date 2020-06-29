@@ -1,6 +1,8 @@
 import React from 'react'
 import {graphql, useStaticQuery, Link} from 'gatsby'
 import Layout from '../components/layout'
+import './beans.css'
+import BeansMap from '../posts/CoffeeMap.png'
 
 
 
@@ -25,10 +27,11 @@ const BeansPage = () => {
     return(
         <Layout>
             <h1>Beans around the world</h1>
-            <ol>
+            <div className="Beans-div">
+            <ul className="BeansPageStyle">
                 {data.allMarkdownRemark.edges.map((edge)=> {
                     return(
-                        <li>
+                        <li className="BeansPageStyle">
                             <Link to={`../blog/${edge.node.fields.slug}`}>
                             <h2>{edge.node.frontmatter.title}</h2>
                             </Link>
@@ -37,7 +40,9 @@ const BeansPage = () => {
                     )
 
                 })}
-            </ol>
+            </ul>
+            <img src={BeansMap} alt="beansmap" className="BeansMap"/>
+        </div>
         </Layout>
     )
 }
